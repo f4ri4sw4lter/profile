@@ -1,8 +1,8 @@
 # profile
 My professional profile.
 
-###Technologies:
--HTML
--CSS
--Bootstrap
--JavaScript
+### Technologies
+- HTML5
+- CSS 3
+- Bootstrap 4
+- JavaScript
