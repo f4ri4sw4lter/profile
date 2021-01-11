@@ -1,8 +1,8 @@
 # profile
 My professional profile.
 
-Languages:
-*HTML
-*CSS
-*Bootstrap
-*JavaScript
+###Technologies:
+-HTML
+-CSS
+-Bootstrap
+-JavaScript
