@@ -10099,6 +10099,11 @@ section.resume-section .resume-section-content {
   width: 100%;
 }
 
+.skill-icon {
+  max-width: 40px;
+  max-height: 40px;
+}
+
 @media (min-width: 768px) {
   section.resume-section {
     min-height: 100vh;
@@ -10108,7 +10113,7 @@ section.resume-section .resume-section-content {
   section.resume-section {
     padding-left: 3rem;
     padding-right: 3rem;
-    padding-top: 5rem;
+    padding-top: 2rem;
     padding-bottom: 5rem;
   }
 }
