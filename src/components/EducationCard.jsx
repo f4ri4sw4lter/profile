@@ -3,23 +3,27 @@ import { Typography, Grid2, Card, CardMedia, CardContent } from '@mui/material'
 function EducationCard({ title, place, date, file, img }) {
 
     return (
-        <Card sx={{ 
-            maxWidth: 345,
+        <Card sx={{
+            maxWidth: 300,
+            width: '100%',
             transition: 'transform 0.3s ease',
                 '&:hover': {
-                    transform: 'scale(1.1)', // Aumenta el tamaño al hacer hover
+                    transform: 'scale(1.1)',
                 },
         }}>
             <CardMedia
-                sx={{ height: 140 }}
+                sx={{ 
+                    height: 140,
+                    borderBottom: '1px solid #ccc',
+                }}
                 image={"../../public/" + img}
                 title="certificate"
             />
             <CardContent>
-                <Typography gutterBottom variant="h6" component="div" color="primary">
+                <Typography gutterBottom variant="h7" component="div" color="primary" fontSize={'18px'}>
                     {title}
                 </Typography>
-                <Typography variant="body2">
+                <Typography fontSize={'16px'}>
                     {place}
                 </Typography>
                 <Typography sx={{ color: 'text.secondary', fontSize: '13px' }}>

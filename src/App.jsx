@@ -1,7 +1,9 @@
-import {About, Experience, Education, Skills, Interest} from "./sections/index"
+import {About, Experience, Education, Projects, Interest} from "./sections/index"
 import Nav from "./components/Nav"
 import { useState } from 'react'
 import './App.css'
+import ReactDOM from 'react-dom'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 function App() {
 
@@ -14,8 +16,8 @@ function App() {
         <div className="container-fluid p-0">
           <About />
           <Experience />
+          <Projects />
           <Education />
-          <Skills />
           <Interest />
         </div>
 

@@ -41,7 +41,7 @@
         "menu_abo"  : "About me",
         "menu_exp"  : "Experience",
         "menu_edu"  : "Education",
-        "menu_ski"  : "Skills",
+        "menu_ski"  : "Projects",
         "menu_int"  : "Interest",
         
             "about_me"  : "I am systems degree student and FullStack PHP  Web developer. I like challenges, solve problems and be in constant learning and evolution. I am looking for a job that allows me to improve my knowledge.",
@@ -64,7 +64,7 @@
             "degree_3"   : "Electronics Technician.",
                 "deg_date_3" : "Mar 2008 - Dec 2015",
 
-        "title_ski"  : "Skills",
+        "title_ski"  : "P",
             "subtitle_1" : "Programming Languages & Tools",
             "subtitle_2" : "Concepts",
                 "concept_1"  : "Responsive Design.",

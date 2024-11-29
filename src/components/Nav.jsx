@@ -1,25 +1,64 @@
+import * as React from 'react';
+import AppBar from '@mui/material/AppBar';
+import Box from '@mui/material/Box';
+import Toolbar from '@mui/material/Toolbar';
+import IconButton from '@mui/material/IconButton';
+import Typography from '@mui/material/Typography';
+import Menu from '@mui/material/Menu';
+import Container from '@mui/material/Container';
+import Avatar from '@mui/material/Avatar';
+import Button from '@mui/material/Button';
+import Tooltip from '@mui/material/Tooltip';
+import MenuItem from '@mui/material/MenuItem';
+
+const pages = [
+    {
+        title: 'Sobre mi',
+        href: '#about'
+    },
+    {
+        title: 'Experiencia',
+        href: '#experience'
+    },
+    {
+        title: 'Proyectos',
+        href: '#Projects'
+    },
+    {
+        title: 'Educacion',
+        href: '#education'
+    }
+];
+
 function Nav() {
 
     return (
-        <nav className="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-            
-            <button className="btn btn-primary translate" id="en">English</button>
-            <button className="btn btn-primary translate" id="es">Español</button>
-
-            <a className="navbar-brand js-scroll-trigger" href="#page-top">
-                <span className="d-none d-lg-block"><img className="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/profile.jpg" alt="" /></span>
-            </a>
-            <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span className="navbar-toggler-icon"></span></button>
-            <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul className="navbar-nav">
-                    <li className="nav-item"><a className="nav-link js-scroll-trigger lang" href="#about" key="menu_abo">About me</a></li>
-                    <li className="nav-item"><a className="nav-link js-scroll-trigger lang" href="#experience" key="menu_exp">Experience</a></li>
-                    <li className="nav-item"><a className="nav-link js-scroll-trigger lang" href="#education" key="menu_edu">Education</a></li>
-                    <li className="nav-item"><a className="nav-link js-scroll-trigger lang" href="#skills" key="menu_ski">Skills</a></li>
-                    <li className="nav-item"><a className="nav-link js-scroll-trigger lang" href="#interests" key="menu_int">Interest</a></li>
-                </ul>
-            </div>
-        </nav>
+        <AppBar position="fixed" className="navbar" sx={{
+            width: '10%',
+            height: '100vh',
+            top: 0,
+            left: 0,
+        }}>
+            <Container maxWidth="xl">
+                <Toolbar disableGutters position="fixed">
+                    <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, justifyContent: 'center' }}>
+                        <ul className="list-content">
+                            {pages.map((page) => (
+                                <li className="list-item">
+                                <Button
+                                    key={page.title}
+                                    href={page.href}
+                                    sx={{ my: 2, color: 'white', display: 'block' }}
+                                >
+                                    {page.title}
+                                </Button>
+                                </li>
+                            ))}
+                        </ul>
+                    </Box>
+                </Toolbar>
+            </Container>
+        </AppBar>
     )
 }
 

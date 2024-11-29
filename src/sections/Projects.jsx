@@ -1,11 +1,12 @@
-import { Typography, Grid2, Card, CardMedia, CardContent } from '@mui/material'
-import EducationCard from '../components/EducationCard';
-import educations from '../utils/educations.js';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { Typography, Grid2, Link } from '@mui/material'
+import ProjectCard from '../components/ProjectCard';
+import projects from '../utils/projects';
 
-function Education() {
+function Projects() {
 
     return (
-        <section className="resume-section" id="education">
+        <section className="resume-section" id="Projects">
             <Grid2 container>
                 <Grid2 item size={12}
                     sx={{ textAlign: 'center' }}
@@ -18,22 +19,30 @@ function Education() {
                             }
                         }}
                     >
-                        Educación
+                        Proyectos
                     </Typography>
                 </Grid2>
 
                 <Grid2 container size={12} alignItems="stretch">
                     {
-                        educations.map((education, index) => (
+                        projects.map((project, index) => (
                             <Grid2 item size={{ xs: 12, md: 4, lg: 3 }} padding={2} sx={{ display: 'flex', justifyContent: 'center' }}>
-                                <EducationCard key={education.title} title={education.title} place={education.place} date={education.date} file={education.file} img={education.img}/>
+                                <ProjectCard 
+                                    key={project.title} 
+                                    title={project.title} 
+                                    description={project.description} 
+                                    date={project.date} 
+                                    href={project.href} 
+                                    img={project.img} 
+                                    name={project.name}
+                                />
                             </Grid2>
                         ))
                     }
                 </Grid2>
             </Grid2>
         </section>
-    );
+    )
 }
 
-export default Education;
+export default Projects;
