@@ -5,7 +5,7 @@ function Experience() {
     return (
         <section className="resume-section" id="experience">
             <Grid2 container>
-                <Grid2 item size={12}
+                <Grid2 size={12}
                     sx={{ textAlign: 'center' }}
                 >
                     <Typography variant="h2" component="h2" key="experience-title" marginBottom={2}
@@ -21,7 +21,7 @@ function Experience() {
                 </Grid2>
 
                 <Grid2 container marginBottom={3} className="experience-block">
-                    <Grid2 item size={{ xs: 12, md: 4 }} textAlign={'left'}>
+                    <Grid2 size={{ xs: 12, md: 4 }} textAlign={'left'}>
                         <Typography variant="h4" component="h4" key="job-1" fontSize={'20px'} color={"primary"}>
                             Soporte IT y Desarrollador Web en el área informática
                         </Typography>
@@ -34,7 +34,7 @@ function Experience() {
                             Marzo 2021 - Febrero 2022
                         </Typography>
                     </Grid2>
-                    <Grid2 item size={{ xs: 12, md: 8 }} textAlign={'left'}>
+                    <Grid2 size={{ xs: 12, md: 8 }} textAlign={'left'}>
                         <ul className='experience-list'>
                             <li>
                                 <Typography>Soporte técnico informático y de redes.</Typography>
@@ -55,7 +55,7 @@ function Experience() {
                 </Grid2>
 
                 <Grid2 container marginBottom={3} marginTop={-1} className="experience-block">
-                    <Grid2 item size={{ xs: 12, md: 4 }} textAlign={'left'}>
+                    <Grid2 size={{ xs: 12, md: 4 }} textAlign={'left'}>
                         <Typography variant="h4" component="h4" key="job-1" fontSize={'20px'} color={"primary"}>
                             Desarrollador Backend
                         </Typography>
@@ -68,7 +68,7 @@ function Experience() {
                             Noviembre 2021 - Diciembre 2022
                         </Typography>
                     </Grid2>
-                    <Grid2 item size={{ xs: 12, md: 8 }} textAlign={'left'}>
+                    <Grid2 size={{ xs: 12, md: 8 }} textAlign={'left'}>
                         <ul className='experience-list'>
                             <li>
                                 <Typography>
@@ -110,7 +110,7 @@ function Experience() {
                 </Grid2>
 
                 <Grid2 container marginBottom={3} marginTop={-1} className="experience-block">
-                    <Grid2 item size={{ xs: 12, md: 4 }} textAlign={'left'}>
+                    <Grid2 size={{ xs: 12, md: 4 }} textAlign={'left'}>
                         <Typography variant="h4" component="h4" key="job-1" fontSize={'20px'} color={"primary"}>
                             Desarrollador Web SSR
                         </Typography>
@@ -123,7 +123,7 @@ function Experience() {
                             Febrero 2023 - Presente
                         </Typography>
                     </Grid2>
-                    <Grid2 item size={{ xs: 12, md: 8 }} textAlign={'left'}>
+                    <Grid2 size={{ xs: 12, md: 8 }} textAlign={'left'}>
                         <ul className='experience-list'>
                             <li>
                                 <Typography>

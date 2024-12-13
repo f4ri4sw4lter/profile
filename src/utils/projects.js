@@ -2,7 +2,7 @@ const projects = [
     {
         name:'app-inmobiliaria',
         title: 'App Inmobiliaria',
-        description: 'Proyecto final de la Materia "Proyecto Final".',
+        description: 'Proyecto final de la Materia "Taller Integrador".',
         href: 'https://github.com/f4ri4sw4lter/app-inmobiliaria',
         img: 'uader.png'
     },

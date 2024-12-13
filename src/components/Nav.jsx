@@ -44,7 +44,7 @@ function Nav() {
                     <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, justifyContent: 'center' }}>
                         <ul className="list-content">
                             {pages.map((page) => (
-                                <li className="list-item">
+                                <li className="list-item" key={page.title}>
                                 <Button
                                     key={page.title}
                                     href={page.href}

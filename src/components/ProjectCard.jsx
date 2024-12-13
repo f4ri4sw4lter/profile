@@ -23,7 +23,7 @@ function ProjectCard({ name, title, description, date, href, img }) {
                     height: 140,
                     borderBottom: '1px solid #ccc',
                 }}
-                image={"../../public/" + img}
+                image={"../../public/logos/" + img}
                 title="img"
             />
             <CardContent>

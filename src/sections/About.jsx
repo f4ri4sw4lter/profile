@@ -10,7 +10,9 @@ function About() {
                         fontSize: {
                             xs: '2rem',
                             md: '4rem'
-                        }
+                        },
+                        marginTop: '80px',
+                        marginBottom: '20px'
                     }}
                 >
                     Farias Walter Nicolas
@@ -22,7 +24,8 @@ function About() {
                         fontSize: {
                             xs: '1.5rem',
                             md: '3rem'
-                        }
+                        },
+                        marginBottom: '20px'
                     }}
                 >
                     Web Developer

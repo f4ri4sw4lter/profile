@@ -16,7 +16,7 @@ function EducationCard({ title, place, date, file, img }) {
                     height: 140,
                     borderBottom: '1px solid #ccc',
                 }}
-                image={"../../public/" + img}
+                image={"../../public/logos/" + img}
                 title="certificate"
             />
             <CardContent>
