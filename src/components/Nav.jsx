@@ -33,14 +33,14 @@ const pages = [
 function Nav() {
 
     return (
-        <AppBar position="fixed" className="navbar" sx={{
+        <AppBar className="navbar" sx={{
             width: '10%',
             height: '100vh',
             top: 0,
             left: 0,
         }}>
             <Container maxWidth="xl">
-                <Toolbar disableGutters position="fixed">
+                <Toolbar disableGutters>
                     <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, justifyContent: 'center' }}>
                         <ul className="list-content">
                             {pages.map((page) => (

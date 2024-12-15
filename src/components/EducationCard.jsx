@@ -12,11 +12,13 @@ function EducationCard({ title, place, date, file, img }) {
                 },
         }}>
             <CardMedia
+                component="img"
                 sx={{ 
                     height: 140,
                     borderBottom: '1px solid #ccc',
                 }}
-                image={"../../public/logos/" + img}
+                image={`src/assets/images/${img}`}
+                alt={"certificate-" + img}
                 title="certificate"
             />
             <CardContent>

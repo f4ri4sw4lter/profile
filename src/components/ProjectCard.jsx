@@ -19,12 +19,13 @@ function ProjectCard({ name, title, description, date, href, img }) {
             }}
         >
             <CardMedia
+                component="img"
                 sx={{ 
                     height: 140,
                     borderBottom: '1px solid #ccc',
                 }}
-                image={"../../public/logos/" + img}
-                title="img"
+                image={"src/assets/images/" + img}
+                alt={"image-" + img}
             />
             <CardContent>
                 <Typography gutterBottom variant="h7" component="div" color="primary" fontSize={'18px'}>

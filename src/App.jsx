@@ -4,6 +4,7 @@ import { useState } from 'react'
 import './App.css'
 import ReactDOM from 'react-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { Typography, Grid2, Card, CardMedia, CardContent, Link } from '@mui/material'
 
 function App() {
 
@@ -11,15 +12,21 @@ function App() {
     <>
       <div id="page-top">
         
-        <Nav />
+        <Grid2 container>
 
-        <div className="container-fluid p-0">
-          <About />
-          <Experience />
-          <Projects />
-          <Education />
-          <Interest />
-        </div>
+          <Grid2 size={{ xs: 12, md: 2, lg: 2 }}>
+            <Nav />
+          </Grid2>
+
+          <Grid2 size={{ xs: 12, md: 10, lg: 10 }}>
+            <About />
+            <Experience />
+            <Projects />
+            <Education />
+            <Interest />
+          </Grid2>
+
+        </Grid2>
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
