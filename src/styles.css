@@ -31,14 +31,12 @@
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
-
+.MuiGrid2-root svg{
+  height: 35px;
+}
 
 html {
   scroll-behavior: smooth;
-}
-
-.experience-list {
-  margin-top: 10px
 }
 
 .experience-block {
@@ -76,34 +74,4 @@ html {
 }
 .social-icons .social-icon:hover {
   background-color: #bd5d38;
-}
-
-.dev-icons {
-  font-size: 3rem;
-}
-
-section.resume-section {
-  display: flex;
-  align-items: center;
-  padding: 1rem 1rem;
-  max-width: 100%;
-}
-
-.skill-icon {
-  max-width: 40px;
-  max-height: 40px;
-}
-
-@media (min-width: 768px) {
-  section.resume-section {
-    min-height: 90vh;
-  }
-}
-@media (min-width: 992px) {
-  section.resume-section {
-    padding-left: 3rem;
-    padding-right: 3rem;
-    padding-top: 2rem;
-    padding-bottom: 5rem;
-  }
 }

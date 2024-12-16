@@ -1,4 +1,4 @@
-import {About, Experience, Education, Projects, Interest} from "./sections/index"
+import { About, Experience, Education, Projects, Interest } from "./sections/index"
 import Nav from "./components/Nav"
 import { useState } from 'react'
 import './App.css'
@@ -11,22 +11,12 @@ function App() {
   return (
     <>
       <div id="page-top">
-        
-        <Grid2 container>
 
-          <Grid2 size={{ xs: 12, md: 2, lg: 2 }}>
-            <Nav />
-          </Grid2>
-
-          <Grid2 size={{ xs: 12, md: 10, lg: 10 }}>
-            <About />
-            <Experience />
-            <Projects />
-            <Education />
-            <Interest />
-          </Grid2>
-
-        </Grid2>
+        <Nav />
+        <About />
+        <Experience />
+        <Projects />
+        <Education />
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>

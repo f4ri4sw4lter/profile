@@ -20,7 +20,7 @@ function Experience() {
                     </Typography>
                 </Grid2>
 
-                <Grid2 container marginBottom={3} className="experience-block">
+                <Grid2 container className="experience-block">
                     <Grid2 size={{ xs: 12, md: 4 }} textAlign={'left'}>
                         <Typography variant="h4" component="h4" key="job-1" fontSize={'20px'} color={"primary"}>
                             Soporte IT y Desarrollador Web en el área informática
@@ -34,6 +34,7 @@ function Experience() {
                             Marzo 2021 - Febrero 2022
                         </Typography>
                     </Grid2>
+
                     <Grid2 size={{ xs: 12, md: 8 }} textAlign={'left'}>
                         <ul className='experience-list'>
                             <li>
@@ -54,9 +55,9 @@ function Experience() {
                     </Grid2>
                 </Grid2>
 
-                <Grid2 container marginBottom={3} marginTop={-1} className="experience-block">
+                <Grid2 container className="experience-block">
                     <Grid2 size={{ xs: 12, md: 4 }} textAlign={'left'}>
-                        <Typography variant="h4" component="h4" key="job-1" fontSize={'20px'} color={"primary"}>
+                        <Typography variant="h4" component="h4" key="job-2" fontSize={'20px'} color={"primary"}>
                             Desarrollador Backend
                         </Typography>
                         <Link href="https://aper.com/" target="_blank" underline="none"
@@ -68,6 +69,7 @@ function Experience() {
                             Noviembre 2021 - Diciembre 2022
                         </Typography>
                     </Grid2>
+
                     <Grid2 size={{ xs: 12, md: 8 }} textAlign={'left'}>
                         <ul className='experience-list'>
                             <li>
@@ -172,7 +174,6 @@ function Experience() {
                             <FontAwesomeIcon icon="fa-brands fa-laravel" />
                             <FontAwesomeIcon icon="fa-brands fa-python" />
                             <FontAwesomeIcon icon="fa-brands fa-aws" />
-
                             <FontAwesomeIcon icon="fa-brands fa-html5" />
                             <FontAwesomeIcon icon="fa-brands fa-css3-alt" />
                             <FontAwesomeIcon icon="fa-brands fa-js" />
