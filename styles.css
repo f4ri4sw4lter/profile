@@ -1,0 +1,205 @@
+@charset "UTF-8";
+
+:root {
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #bd5d38;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --gray-light: #898f8f;
+    --primary: #bd5d38;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+nav {
+    top: 0;
+    font-size: 14px;
+    border-radius: 5px;
+    color: var(--light);
+    background-color: black;
+}
+
+nav ul {
+    padding: 15px 8px;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+
+.navbar-element {
+    padding: 5px 10px;
+    color: var(--light);
+    text-decoration: none;
+}
+
+.navbar-element:hover {
+    border-radius: 2px;
+    background-color: var(--indigo);
+}
+
+#about-me {
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+    color: var(--light);
+    background-color: var(--purple);
+}
+
+#about-me h1 {
+    color: var(--gray-dark);
+}
+
+#contact {
+    padding: 5px;
+    color: var(--gray);
+    border-radius: 25px;
+    background-color: var(--light);
+}
+
+#description {
+    text-align: justify;
+}
+
+#experience {
+    gap: 10px;
+    display: flex;
+    padding: 15px;
+    flex-wrap: wrap;
+    margin-top: 5px;
+    border-radius: 5px;
+    text-align: center;
+    border-radius: 5px;
+    justify-content: center;
+    color: var(--gray-dark);
+    background-color: var(--gray);
+}
+
+#experience h3 {
+    color: var(--light);
+}
+
+.experience-container {
+    padding: 5px;
+    border-radius: 10px;
+    background-color: var(--light);
+}
+
+.job-title {
+    color: var(--purple);
+    font-size: 18px;
+}
+
+.job-company {
+    color: var(--blue);
+    font-size: 16px;
+}
+
+.details-list {
+    text-align: left;
+    padding-left: 20px;
+}
+
+.tech-icons {
+    font-size: 30px;
+}
+
+#projects {
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+    color: var(--light);
+    background-color: var(--purple);
+    margin-top: 5px;
+}
+
+.projects-container {
+    gap: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    width: 100%;
+    border-radius: 25px;
+    background-color: var(--light);
+    border: 1px solid var(--grey);
+}
+
+.card a {
+    text-decoration: none;
+}
+
+.card-img img {
+    width: 100%;
+    max-height: 300px;
+    border-bottom: 1px solid var(--gray);
+}
+
+.card-info {
+    padding: 15px;
+    height: 150px;
+}
+
+.card-title {
+    color: var(--purple);
+}
+
+.card-description {
+    color: var(--blue);
+}
+
+.card-date {
+    color: var(--gray);
+}
+
+#education {
+    gap: 10px;
+    display: flex;
+    padding: 15px;
+    flex-wrap: wrap;
+    margin-top: 5px;
+    border-radius: 5px;
+    text-align: center;
+    border-radius: 5px;
+    justify-content: center;
+    color: var(--gray-dark);
+    background-color: var(--gray);
+}
+
+#education h3 {
+    color: var(--light);
+}
+
+.education-container{
+    gap: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
