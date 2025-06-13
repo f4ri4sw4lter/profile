@@ -338,6 +338,13 @@ nav ul {
         justify-content: center;
     }
 
+    #contact div {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
     .social-icon {
         transition: transform 0.3s ease;
     }
