@@ -22,8 +22,13 @@
       <li><a class="navbar-element" href="#education">Educacion</a></li>
     </ul>
   </nav>
-
+  <div id="abrir-modal" class="trigger-div">Ver PDF</div>
   <section id="about-me">
+
+    <div class="img-container">
+      <div class="img"></div>
+    </div>
+
     <h1>Farias Walter Nicolas</h1>
     <h2>Web Developer</h2>
 
@@ -244,91 +249,116 @@
     <h3>Educación</h3>
 
     <div class="education-container">
-      <div class="card">
-        <a href="#" target="_blank">
-          <div class="card-img">
-            <img src="./assets/images/uader.png" alt="">
-          </div>
+      <div class="card education-card">
+        <div class="card-img">
+          <img src="./assets/images/uader.png" alt="">
+        </div>
 
-          <div class="card-info">
-            <p class="card-title">Analista en Sistemas de la Información</p>
-            <p class="card-description">Universidad Autonoma de Entre Ríos</p>
-            <p class="card-date"><b>2016 - 2025</b></p>
-          </div>
-        </a>
+        <div class="card-info">
+          <p class="card-title">Analista en Sistemas de la Información</p>
+          <p class="card-description">Universidad Autonoma de Entre Ríos</p>
+          <p class="card-date"><b>2016 - 2025</b></p>
+        </div>
       </div>
 
-      <div class="card">
-        <a href="#" target="_blank">
-          <div class="card-img">
-            <img src="./assets/images/educacionit.jpg" alt="">
-          </div>
+      <div class="card education-card" data-src="./assets/docs/php.pdf">
+        <div class="card-img">
+          <img src="./assets/images/educacionit.jpg" alt="">
+        </div>
 
-          <div class="card-info">
-            <p class="card-title">Desarrollador FullStack con PHP</p>
-            <p class="card-description">EducacionIT</p>
-            <p class="card-date"><b>2020</b></p>
-          </div>
-        </a>
+        <div class="card-info">
+          <p class="card-title">Desarrollador FullStack con PHP</p>
+          <p class="card-description">EducacionIT</p>
+          <p class="card-date"><b>2020</b></p>
+        </div>
       </div>
 
-      <div class="card">
-        <a href="#" target="_blank">
-          <div class="card-img">
-            <img src="./assets/images/udemy.png" alt="">
-          </div>
+      <div class="card education-card" data-src="./assets/docs/nodejs.pdf">
+        <div class="card-img">
+          <img src="./assets/images/udemy.png" alt="">
+        </div>
 
-          <div class="card-info">
-            <p class="card-title">JavaScript: Desde cero con NodeJS</p>
-            <p class="card-description">Udemy</p>
-            <p class="card-date"><b>2023</b></p>
-          </div>
-        </a>
+        <div class="card-info">
+          <p class="card-title">JavaScript: Desde cero con NodeJS</p>
+          <p class="card-description">Udemy</p>
+          <p class="card-date"><b>2023</b></p>
+        </div>
       </div>
 
-      <div class="card">
-        <a href="#" target="_blank">
-          <div class="card-img">
-            <img src="./assets/images/udemy.png" alt="">
-          </div>
+      <div class="card education-card" data-src="./assets/docs/react.pdf">
+        <div class="card-img">
+          <img src="./assets/images/udemy.png" alt="">
+        </div>
 
-          <div class="card-info">
-            <p class="card-title">React: De Cero a experto (Hooks y MERN)</p>
-            <p class="card-description">Udemy</p>
-            <p class="card-date"><b>2023</b></p>
-          </div>
-        </a>
+        <div class="card-info">
+          <p class="card-title">React: De Cero a experto (Hooks y MERN)</p>
+          <p class="card-description">Udemy</p>
+          <p class="card-date"><b>2023</b></p>
+        </div>
       </div>
 
-      <div class="card">
-        <a href="#" target="_blank">
-          <div class="card-img">
-            <img src="./assets/images/uner.png" alt="">
-          </div>
+      <div class="card education-card" data-src="./assets/docs/ingles.png">
+        <div class="card-img">
+          <img src="./assets/images/uner.png" alt="">
+        </div>
 
-          <div class="card-info">
-            <p class="card-title">Ingles - Nivel 4</p>
-            <p class="card-description">Universidad Nacional de Entre Ríos</p>
-            <p class="card-date"><b>2024</b></p>
-          </div>
-        </a>
+        <div class="card-info">
+          <p class="card-title">Ingles - Nivel 4</p>
+          <p class="card-description">Universidad Nacional de Entre Ríos</p>
+          <p class="card-date"><b>2024</b></p>
+        </div>
       </div>
 
-      <div class="card">
-        <a href="#" target="_blank">
-          <div class="card-img">
-            <img src="./assets/images/platzi.jpg" alt="">
-          </div>
+      <div class="card education-card" data-src="./assets/docs/diploma-arquitecturas-limpias.pdf">
+        <div class="card-img">
+          <img src="./assets/images/platzi.jpg" alt="">
+        </div>
 
-          <div class="card-info">
-            <p class="card-title">Arquitecturas limpias para Desarrollo de Software</p>
-            <p class="card-description">Platzi</p>
-            <p class="card-date"><b>2024</b></p>
-          </div>
-        </a>
+        <div class="card-info">
+          <p class="card-title">Arquitecturas limpias para Desarrollo de Software</p>
+          <p class="card-description">Platzi</p>
+          <p class="card-date"><b>2024</b></p>
+        </div>
       </div>
+
+      <div class="card education-card" data-src="./assets/docs/inteligencia_emocional.pdf">
+        <div class="card-img">
+          <img src="./assets/images/plataforma.png" alt="">
+        </div>
+
+        <div class="card-info">
+          <p class="card-title">Inteligencia emocional y trabajo en equipo</p>
+          <p class="card-description">Secretaria de Innovacion, Ciencia y Tecnología</p>
+          <p class="card-date"><b>2025</b></p>
+        </div>
+      </div>
+
+      <div class="card education-card" data-src="./assets/docs/liderazgo.pdf">
+        <div class="card-img">
+          <img src="./assets/images/plataforma.png" alt="">
+        </div>
+
+        <div class="card-info">
+          <p class="card-title">Teorias del liderazgo</p>
+          <p class="card-description">Secretaria de Innovacion, Ciencia y Tecnología</p>
+          <p class="card-date"><b>2025</b></p>
+        </div>
+      </div>
+
     </div>
   </section>
+
+  <!-- Modal -->
+  <div id="modal" class="modal">
+    <div class="modal-contenido">
+      <span id="cerrar-modal" class="cerrar">&times;</span>
+      <iframe id="pdf-embed" frameborder="0"></iframe>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="./main.js"></script>
+
 </body>
 
 </html>

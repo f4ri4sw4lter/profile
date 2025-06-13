@@ -49,7 +49,7 @@ nav ul {
     padding: 15px 8px;
     display: flex;
     list-style: none;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .navbar-element {
@@ -69,6 +69,45 @@ nav ul {
     text-align: center;
     color: var(--light);
     background-color: var(--purple);
+}
+
+.img-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    transition: background-image 0.5s ease;
+    background-image: url('./assets/images/walito.png');
+}
+
+.img::after {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    z-index: 1;
+    content: "";
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    transition: opacity 0.5s ease;
+    background-image: url('./assets/images/perfil.jpeg');
+}
+
+.img:hover::after {
+    opacity: 1;
 }
 
 #about-me h1 {
@@ -198,19 +237,101 @@ nav ul {
     color: var(--light);
 }
 
-.education-container{
+.education-container {
     gap: 15px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
+.trigger-div {
+    background-color: #3498db;
+    color: white;
+    padding: 15px 25px;
+    cursor: pointer;
+    border-radius: 8px;
+    display: inline-block;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-contenido {
+    position: relative;
+    background: white;
+    padding: 10px;
+    width: 80%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-contenido iframe {
+    flex: 1;
+    width: 100%;
+    border: none;
+}
+
+.cerrar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 28px;
+    cursor: pointer;
+    color: var(--light);
+    border-radius: 50%;
+    background-color: var(--purple);
+    width: 30px;
+    text-align: center;
+}
+
+
 @media screen and (min-width: 1024px) {
+    nav {
+        font-size: 16px;
+    }
+
+    nav ul {
+        justify-content: center;
+    }
+
+    .img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .img::after {
+        width: 250px;
+        height: 250px;
+    }
+
+    #about-me h1 {
+        font-size: 38px;
+    }
+
     #contact {
         display: flex;
         flex-wrap: nowrap;
-        justify-content: center;
         align-items: center;
+        justify-content: center;
+    }
+
+    .social-icon {
+        transition: transform 0.3s ease;
+    }
+
+    .social-icon:hover {
+        transform: scale(1.2);
     }
 
     .experience-container {
@@ -220,20 +341,34 @@ nav ul {
 
     .experience-info {
         width: 40%;
-        border-right: 1px solid var(--gray);
         height: 90%;
+        border-right: 1px solid var(--gray);
     }
 
     .experience-details {
         width: 60%;
     }
 
-    .projects-container {
-        gap: 5px;
+    .tech-icons {
+        text-align: left;
+        padding-left: 20px;
     }
 
     .card {
-        width: 45%;
+        width: 20%;
+        transition: transform 0.3s ease;
     }
-    
+
+    .card:hover {
+        transform: scale(1.05);
+    }
+
+    .card-img {
+        height: 60%;
+    }
+
+    .card-img img {
+        height: 100%;
+    }
+
 }
