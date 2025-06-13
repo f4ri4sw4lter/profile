@@ -85,7 +85,7 @@ nav ul {
     background-size: cover;
     background-position: center;
     transition: background-image 0.5s ease;
-    background-image: url('./assets/images/walito.png');
+    background-image: url('../../assets/images/walito.png');
 }
 
 .img::after {
@@ -103,7 +103,7 @@ nav ul {
     background-size: cover;
     background-position: center;
     transition: opacity 0.5s ease;
-    background-image: url('./assets/images/perfil.jpeg');
+    background-image: url('../../assets/images/perfil.jpeg');
 }
 
 .img:hover::after {
@@ -115,8 +115,14 @@ nav ul {
 }
 
 #contact {
-    padding: 5px;
+    display: flex;
     color: var(--gray);
+    justify-content: center;
+}
+
+#contact div {
+    padding: 15px;
+    width: fit-content;
     border-radius: 25px;
     background-color: var(--light);
 }
@@ -188,8 +194,13 @@ nav ul {
 .card {
     width: 100%;
     border-radius: 25px;
-    background-color: var(--light);
     border: 1px solid var(--grey);
+    background-color: var(--light);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+}
+
+.card:hover {
+    cursor: pointer;
 }
 
 .card a {
@@ -200,6 +211,7 @@ nav ul {
     width: 100%;
     max-height: 300px;
     border-bottom: 1px solid var(--gray);
+    border-radius: 25px 25px 0 0;
 }
 
 .card-info {
