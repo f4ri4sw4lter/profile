@@ -85,7 +85,7 @@ nav ul {
     background-size: cover;
     background-position: center;
     transition: background-image 0.5s ease;
-    background-image: url('../../assets/images/walito.png');
+    background-image: url('../../assets/images/perfil.jpeg');
 }
 
 .img::after {
@@ -103,7 +103,7 @@ nav ul {
     background-size: cover;
     background-position: center;
     transition: opacity 0.5s ease;
-    background-image: url('../../assets/images/perfil.jpeg');
+    background-image: url('../../assets/images/walito.png');
 }
 
 .img:hover::after {
@@ -345,6 +345,11 @@ nav ul {
         justify-content: center;
     }
 
+    #description {
+        margin: 20px auto;
+        padding: 0 50px;
+    }
+
     .social-icon {
         transition: transform 0.3s ease;
     }
@@ -356,6 +361,7 @@ nav ul {
     .experience-container {
         display: flex;
         align-items: center;
+        padding: 15px;
     }
 
     .experience-info {
@@ -366,6 +372,10 @@ nav ul {
 
     .experience-details {
         width: 60%;
+    }
+
+    .details-list {
+        padding-left: 30px;
     }
 
     .tech-icons {
