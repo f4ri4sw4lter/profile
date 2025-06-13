@@ -39,7 +39,7 @@ html {
 
 nav {
     top: 0;
-    font-size: 14px;
+    font-size: 12px;
     border-radius: 5px;
     color: var(--light);
     background-color: black;
@@ -105,6 +105,7 @@ nav ul {
 }
 
 .experience-container {
+    width: 100%;
     padding: 5px;
     border-radius: 10px;
     background-color: var(--light);
@@ -202,4 +203,37 @@ nav ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+}
+
+@media screen and (min-width: 1024px) {
+    #contact {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .experience-container {
+        display: flex;
+        align-items: center;
+    }
+
+    .experience-info {
+        width: 40%;
+        border-right: 1px solid var(--gray);
+        height: 90%;
+    }
+
+    .experience-details {
+        width: 60%;
+    }
+
+    .projects-container {
+        gap: 5px;
+    }
+
+    .card {
+        width: 45%;
+    }
+    
 }
