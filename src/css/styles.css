@@ -1,28 +1,15 @@
 @charset "UTF-8";
 
 :root {
-    --blue: #007bff;
-    --indigo: #6610f2;
-    --purple: #6f42c1;
-    --pink: #e83e8c;
-    --red: #dc3545;
-    --orange: #bd5d38;
-    --yellow: #ffc107;
-    --green: #28a745;
-    --teal: #20c997;
-    --cyan: #17a2b8;
-    --white: #fff;
-    --gray: #6c757d;
-    --gray-dark: #343a40;
-    --gray-light: #898f8f;
-    --primary: #bd5d38;
-    --secondary: #6c757d;
-    --success: #28a745;
-    --info: #17a2b8;
-    --warning: #ffc107;
-    --danger: #dc3545;
-    --light: #f8f9fa;
-    --dark: #343a40;
+    --indigo: #4B0082;
+    --night: #0C0F0A;
+    --white: #F8F7F9;
+    --teal: #177E89;
+    --poppy: #DB3A34;
+    --songlow: #FFC857;
+    --turquoise: #1DD3B0;
+    --green-yellow: #AFFC41;
+    --light-green: #B2FF9E;
     --breakpoint-xs: 0;
     --breakpoint-sm: 576px;
     --breakpoint-md: 768px;
@@ -34,15 +21,19 @@
 
 html {
     scroll-behavior: smooth;
-    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    font-size: 14px;
+    background-color: var(--night);
+    font-family: 'Press Start 2P', cursive;
 }
 
 nav {
     top: 0;
     font-size: 12px;
     border-radius: 5px;
-    color: var(--light);
-    background-color: black;
+    background-color: var(--turquoise);
 }
 
 nav ul {
@@ -50,25 +41,36 @@ nav ul {
     display: flex;
     list-style: none;
     justify-content: space-between;
+    border: 1px solid var(--white);
+    border-radius: 5px;
+    margin-bottom: 5px;
+    font-size: 12px;
 }
 
 .navbar-element {
     padding: 5px 10px;
-    color: var(--light);
+    color: var(--night);
     text-decoration: none;
 }
 
-.navbar-element:hover {
+nav ul li:hover {
+    cursor: pointer;
     border-radius: 2px;
-    background-color: var(--indigo);
+}
+
+.section-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #about-me {
     padding: 15px;
     border-radius: 5px;
     text-align: center;
-    color: var(--light);
-    background-color: var(--purple);
+    color: var(--white);
+    background-color: var(--indigo);
+    border: 1px solid var(--white);
 }
 
 .img-container {
@@ -111,12 +113,12 @@ nav ul {
 }
 
 #about-me h1 {
-    color: var(--gray-dark);
+    color: var(--white);
 }
 
 #contact {
     display: flex;
-    color: var(--gray);
+    color: var(--night);
     justify-content: center;
 }
 
@@ -124,7 +126,17 @@ nav ul {
     padding: 15px;
     width: fit-content;
     border-radius: 25px;
-    background-color: var(--light);
+    background-color: var(--white);
+}
+
+#ubi-icon,
+#mail-icon,
+#work-icon,
+#education-icon,
+#projects-icon {
+    width: 20px;
+    height: 20px;
+    padding: 10px;
 }
 
 #description {
@@ -141,29 +153,32 @@ nav ul {
     text-align: center;
     border-radius: 5px;
     justify-content: center;
-    color: var(--gray-dark);
-    background-color: var(--gray);
+    color: var(--night);
+    background-color: var(--turquoise);
+    border: 1px solid var(--night);
 }
 
 #experience h3 {
-    color: var(--light);
+    color: var(--night);
 }
 
 .experience-container {
     width: 100%;
     padding: 5px;
     border-radius: 10px;
-    background-color: var(--light);
+    color: var(--night);
+    background-color: var(--white);
+    border: 5px groove gray;
 }
 
 .job-title {
-    color: var(--purple);
+    color: var(--indigo);
     font-size: 18px;
 }
 
 .job-company {
-    color: var(--blue);
-    font-size: 16px;
+    color: var(--night);
+    font-size: 14px;
 }
 
 .details-list {
@@ -177,11 +192,12 @@ nav ul {
 
 #projects {
     padding: 15px;
+    margin-top: 5px;
     border-radius: 5px;
     text-align: center;
-    color: var(--light);
-    background-color: var(--purple);
-    margin-top: 5px;
+    color: var(--white);
+    border: 1px solid var(--white);
+    background-color: var(--indigo);
 }
 
 .projects-container {
@@ -194,9 +210,9 @@ nav ul {
 .card {
     width: 100%;
     border-radius: 25px;
-    border: 1px solid var(--grey);
-    background-color: var(--light);
+    background-color: var(--white);
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+    border: 5px groove gray;
 }
 
 .card:hover {
@@ -210,8 +226,9 @@ nav ul {
 .card-img img {
     width: 100%;
     max-height: 300px;
-    border-bottom: 1px solid var(--gray);
+    object-fit: contain;
     border-radius: 25px 25px 0 0;
+    border-bottom: 2px solid var(--night);
 }
 
 .card-info {
@@ -220,15 +237,15 @@ nav ul {
 }
 
 .card-title {
-    color: var(--purple);
+    color: var(--indigo);
 }
 
 .card-description {
-    color: var(--blue);
+    color: var(--night);
 }
 
 .card-date {
-    color: var(--gray);
+    color: var(--turquoise);
 }
 
 #education {
@@ -241,12 +258,12 @@ nav ul {
     text-align: center;
     border-radius: 5px;
     justify-content: center;
-    color: var(--gray-dark);
-    background-color: var(--gray);
+    border: 1px solid var(--white);
+    background-color: var(--turquoise);
 }
 
 #education h3 {
-    color: var(--light);
+    color: var(--night);
 }
 
 .education-container {
@@ -300,9 +317,9 @@ nav ul {
     right: 0;
     font-size: 28px;
     cursor: pointer;
-    color: var(--light);
+    color: var(--white);
     border-radius: 50%;
-    background-color: var(--purple);
+    background-color: var(--primary-color);
     width: 30px;
     text-align: center;
 }
@@ -315,6 +332,11 @@ nav ul {
 
     nav ul {
         justify-content: center;
+    }
+
+    nav ul li {
+        width: 100%;
+        text-align: center;
     }
 
     .img {
